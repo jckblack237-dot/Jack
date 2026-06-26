@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-body: "Manrope", "system-ui", sans-serif;
+
+  --color-lagoon-50: #eefbf9;
+  --color-lagoon-100: #d3f3ee;
+  --color-lagoon-200: #a8e6dc;
+  --color-lagoon-300: #74d3c4;
+  --color-lagoon-400: #45b8aa;
+  --color-lagoon-500: #2a9a8e;
+  --color-lagoon-600: #1f7c73;
+  --color-lagoon-700: #1c635d;
+  --color-lagoon-800: #194f4b;
+  --color-lagoon-900: #0f3330;
+  --color-lagoon-950: #081d1b;
+
+  --color-sand-50: #fdfaf3;
+  --color-sand-100: #faf2e0;
+  --color-sand-200: #f3e2bf;
+  --color-sand-300: #e9cd94;
+  --color-sand-400: #ddb267;
+  --color-sand-500: #cf9847;
+  --color-sand-600: #b27c38;
+  --color-sand-700: #8e6030;
+  --color-sand-800: #714d2c;
+  --color-sand-900: #5c4027;
+  --color-sand-950: #332113;
+
+  --color-coral-50: #fff2ed;
+  --color-coral-100: #ffe1d3;
+  --color-coral-200: #ffc1a8;
+  --color-coral-300: #ff9b74;
+  --color-coral-400: #fb7548;
+  --color-coral-500: #f15a2c;
+  --color-coral-600: #d6431c;
+  --color-coral-700: #b13417;
+  --color-coral-800: #8c2c18;
+  --color-coral-900: #722816;
+  --color-coral-950: #3e1209;
+
+  --color-ink-50: #f4f6f6;
+  --color-ink-100: #e3e9e8;
+  --color-ink-200: #c4d1cf;
+  --color-ink-300: #99aeac;
+  --color-ink-400: #6c8684;
+  --color-ink-500: #506a69;
+  --color-ink-600: #3f5453;
+  --color-ink-700: #354645;
+  --color-ink-800: #263433;
+  --color-ink-900: #131c1c;
+  --color-ink-950: #0a1010;
+
+  --animate-marquee: marquee 28s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-sand-50);
+  color: var(--color-ink-900);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-coral-300);
+  color: var(--color-ink-950);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-sand-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-lagoon-300);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-lagoon-400);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
