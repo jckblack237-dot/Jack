@@ -1,37 +1,31 @@
 import { motion } from 'framer-motion';
-import { Waves } from 'lucide-react';
+import { Tag } from 'lucide-react';
 
 export default function Preloader() {
   return (
     <motion.div
-      initial={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
-      className="fixed inset-0 z-[200] flex flex-col items-center justify-center gap-5 bg-lagoon-950"
+      exit={{ opacity: 0, y: -24 }}
+      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+      className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-4 bg-page"
+      aria-hidden
     >
-      <motion.span
-        initial={{ scale: 0.6, opacity: 0, rotate: -8 }}
+      <motion.div
+        initial={{ scale: 0.6, opacity: 0, rotate: -12 }}
         animate={{ scale: 1, opacity: 1, rotate: 0 }}
-        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="flex h-16 w-16 items-center justify-center rounded-full bg-sand-50/10 text-sand-50"
+        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+        className="flex h-14 w-14 items-center justify-center rounded-2xl"
+        style={{ background: 'linear-gradient(135deg, var(--color-s1), var(--color-glow))' }}
       >
-        <Waves size={28} strokeWidth={2} />
-      </motion.span>
-      <motion.span
-        initial={{ opacity: 0, y: 10 }}
+        <Tag size={26} className="text-page" strokeWidth={2.4} />
+      </motion.div>
+      <motion.p
+        initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.5 }}
-        className="font-display text-lg font-semibold tracking-wide text-sand-50"
+        transition={{ delay: 0.2, duration: 0.4 }}
+        className="text-lg font-semibold tracking-tight text-ink"
       >
-        Maldives Bites
-      </motion.span>
-      <div className="h-0.5 w-40 overflow-hidden rounded-full bg-sand-50/15">
-        <motion.div
-          initial={{ width: '0%' }}
-          animate={{ width: '100%' }}
-          transition={{ duration: 1.1, ease: 'easeInOut' }}
-          className="h-full bg-coral-400"
-        />
-      </div>
+        Agu<span className="text-ink-3"> · Maldives price watch</span>
+      </motion.p>
     </motion.div>
   );
 }
