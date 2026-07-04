@@ -7,6 +7,7 @@ export interface MenuItem {
   price: number;
   image: string;
   tag?: string;
+  restaurantId: string;
 }
 
 export interface MenuCategory {
@@ -27,6 +28,7 @@ export const menu: MenuCategory[] = [
         price: 18,
         image: img(ids.starterOysters, 700),
         tag: 'Chef\'s Pick',
+        restaurantId: 'nihonbashi-crossroads',
       },
       {
         id: 'tiger-prawn-salad',
@@ -34,6 +36,7 @@ export const menu: MenuCategory[] = [
         description: 'Charred prawns, green papaya, cashew, lime dressing',
         price: 16,
         image: img(ids.starterShrimp, 700),
+        restaurantId: 'benjarong',
       },
       {
         id: 'chilled-shellfish-bowl',
@@ -41,6 +44,7 @@ export const menu: MenuCategory[] = [
         description: 'Reef clams and shells, coconut-lime broth, herbs',
         price: 14,
         image: img(ids.starterShells, 700),
+        restaurantId: 'subsix',
       },
     ],
   },
@@ -55,6 +59,7 @@ export const menu: MenuCategory[] = [
         price: 48,
         image: img(ids.mainLobster, 700),
         tag: 'Signature',
+        restaurantId: 'sea-fire-salt',
       },
       {
         id: 'garudhiya-catch',
@@ -62,6 +67,7 @@ export const menu: MenuCategory[] = [
         description: 'Clear tuna broth, steamed rice, lime, fresh chilli',
         price: 32,
         image: img(ids.mainSeafoodPlate, 700),
+        restaurantId: 'batheli',
       },
       {
         id: 'chefs-catch-platter',
@@ -69,6 +75,7 @@ export const menu: MenuCategory[] = [
         description: 'Mixed grilled reef fish, island vegetables, sambol',
         price: 38,
         image: img(ids.mainWhitePlate, 700),
+        restaurantId: 'thila-kurumba',
       },
       {
         id: 'saffron-seafood-rice',
@@ -77,6 +84,7 @@ export const menu: MenuCategory[] = [
         price: 36,
         image: img(ids.mainSeafoodTable, 700),
         tag: 'Sharing',
+        restaurantId: 'symphony-male',
       },
     ],
   },
@@ -90,6 +98,7 @@ export const menu: MenuCategory[] = [
         description: 'Island mango, toasted coconut cream, lime zest',
         price: 14,
         image: img(ids.dessertMangoTart, 700),
+        restaurantId: 'fresh-in-the-garden',
       },
       {
         id: 'tropical-berry-pavlova',
@@ -97,6 +106,7 @@ export const menu: MenuCategory[] = [
         description: 'Passionfruit curd, fresh berries, meringue',
         price: 13,
         image: img(ids.dessertBerries, 700),
+        restaurantId: 'subsix',
       },
       {
         id: 'coconut-sticky-rice',
@@ -104,6 +114,7 @@ export const menu: MenuCategory[] = [
         description: 'Fresh fruit, toasted coconut, palm sugar syrup',
         price: 12,
         image: img(ids.dessertCoconutBowl, 700),
+        restaurantId: 'batheli',
       },
     ],
   },
@@ -118,6 +129,7 @@ export const menu: MenuCategory[] = [
         price: 15,
         image: img(ids.drinkBeach, 700),
         tag: 'Sundowner',
+        restaurantId: 'hard-rock-crossroads',
       },
       {
         id: 'lagoon-breeze',
@@ -125,6 +137,7 @@ export const menu: MenuCategory[] = [
         description: 'Gin, cucumber, mint, tonic, sea salt rim',
         price: 14,
         image: img(ids.drinkLedge, 700),
+        restaurantId: 'thila-kurumba',
       },
       {
         id: 'island-citrus-cooler',
@@ -132,6 +145,7 @@ export const menu: MenuCategory[] = [
         description: 'Fresh orange, mint, soda — non-alcoholic',
         price: 9,
         image: img(ids.drinkCitrus, 700),
+        restaurantId: 'shell-beans-male',
       },
     ],
   },

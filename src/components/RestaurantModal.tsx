@@ -153,24 +153,33 @@ export default function RestaurantModal({ restaurant, onClose }: RestaurantModal
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.25, ease: 'easeOut' }}
               >
-                <ul className="space-y-5">
+                <ul className="space-y-4">
                   {restaurant.menu.map((item, i) => (
                     <motion.li
                       key={item.name}
                       initial={{ opacity: 0, x: -12 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.3, delay: i * 0.07 }}
+                      className="flex items-center gap-4"
                     >
-                      <div className="flex items-baseline gap-3">
-                        <h4 className="font-display text-base font-bold text-cream-50 sm:text-lg">
-                          {item.name}
-                        </h4>
-                        <span className="flex-1 border-b border-dotted border-cream-50/20" />
-                        <span className="shrink-0 font-display text-base font-bold text-amber-400">
-                          ${item.price}
-                        </span>
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        loading="lazy"
+                        className="h-14 w-14 shrink-0 rounded-xl object-cover ring-1 ring-cream-50/10 sm:h-16 sm:w-16"
+                      />
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-baseline gap-3">
+                          <h4 className="font-display text-base font-bold text-cream-50 sm:text-lg">
+                            {item.name}
+                          </h4>
+                          <span className="flex-1 border-b border-dotted border-cream-50/20" />
+                          <span className="shrink-0 font-display text-base font-bold text-amber-400">
+                            ${item.price}
+                          </span>
+                        </div>
+                        <p className="mt-1 font-body text-sm text-cream-100/50">{item.description}</p>
                       </div>
-                      <p className="mt-1 font-body text-sm text-cream-100/50">{item.description}</p>
                     </motion.li>
                   ))}
                 </ul>

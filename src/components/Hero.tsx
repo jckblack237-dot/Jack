@@ -74,9 +74,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.85 }}
             className="mx-auto mt-6 max-w-md text-balance font-body text-sm leading-relaxed text-cream-100/60 sm:text-base lg:mx-0"
           >
-            Twelve celebrated restaurants — undersea domes, overwater grills and Malé
-            institutions — reviewed with full menus, honest prices and exact directions
-            to every table.
+            Twenty celebrated restaurants — undersea domes, overwater grills and the
+            best of Malé &amp; Hulhumalé — reviewed with photographed menus, honest
+            prices and exact directions to every table.
           </motion.p>
 
           <motion.div
@@ -107,12 +107,12 @@ export default function Hero() {
           >
             <span className="flex items-center gap-1.5 font-body text-xs text-cream-100/70">
               <Star size={13} className="fill-amber-400 text-amber-400" />
-              4.8 average rating
+              4.6 average rating
             </span>
             <span className="h-3 w-px bg-cream-50/20" />
-            <span className="font-body text-xs text-cream-100/70">12 restaurants</span>
+            <span className="font-body text-xs text-cream-100/70">20 restaurants</span>
             <span className="h-3 w-px bg-cream-50/20" />
-            <span className="font-body text-xs text-cream-100/70">7 atolls</span>
+            <span className="font-body text-xs text-cream-100/70">10 cuisines</span>
           </motion.div>
         </div>
 
