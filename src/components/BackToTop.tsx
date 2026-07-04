@@ -23,7 +23,7 @@ export default function BackToTop() {
           whileTap={{ scale: 0.92 }}
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
-          className="fixed bottom-6 right-5 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-lagoon-800 text-sand-50 shadow-lg shadow-ink-950/20 sm:bottom-8 sm:right-8"
+          className="fixed bottom-7 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-amber-400 text-night-950 shadow-lg shadow-night-950/50 sm:bottom-9 sm:right-9"
         >
           <ArrowUp size={18} />
         </motion.button>

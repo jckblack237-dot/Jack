@@ -11,13 +11,12 @@ export default function Gallery() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="gallery" className="bg-ink-950 py-20 sm:py-28">
+    <section id="gallery" className="bg-night-950 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
-          eyebrow="The Setting"
+          eyebrow="the setting"
           title="Pictures from the places themselves"
           description="Overwater decks, sandbank tables and the sunsets that come free with every booking."
-          light
         />
 
         <div className="mt-14 grid grid-cols-2 auto-rows-[150px] gap-3 sm:auto-rows-[200px] sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
@@ -29,7 +28,7 @@ export default function Gallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.45, delay: (i % 4) * 0.08, ease: 'easeOut' }}
-              className={`group relative overflow-hidden rounded-2xl ${
+              className={`group relative overflow-hidden rounded-2xl ring-1 ring-cream-50/8 ${
                 tallIndexes.has(i) ? 'row-span-2' : ''
               }`}
             >
@@ -39,11 +38,11 @@ export default function Gallery() {
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-ink-950/10 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-90" />
-              <span className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-ink-950/40 text-sand-50 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
+              <div className="absolute inset-0 bg-gradient-to-t from-night-950/85 via-night-950/10 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-90" />
+              <span className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-night-950/50 text-amber-400 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
                 <Expand size={14} />
               </span>
-              <p className="absolute inset-x-3 bottom-3 translate-y-2 font-body text-xs font-medium text-sand-50 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 sm:text-sm">
+              <p className="absolute inset-x-3 bottom-3 translate-y-2 font-body text-xs font-medium text-cream-50 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 sm:text-sm">
                 {photo.caption}
               </p>
             </motion.button>

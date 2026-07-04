@@ -13,12 +13,12 @@ import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 
 const tickerItems = [
-  'Fresh Reef Catch',
+  'Undersea Dining',
+  'Overwater Grills',
+  'Heritage Maldivian',
+  'Malé Institutions',
   'Sunset Tables',
-  'Private Sandbanks',
-  'Overwater Dining',
-  'Heritage Recipes',
-  '120+ Restaurants Reviewed',
+  'Seaplane Transfers',
 ];
 
 export default function App() {
@@ -37,17 +37,23 @@ export default function App() {
     <>
       <AnimatePresence>{loading && <Preloader />}</AnimatePresence>
 
-      <Navbar />
-      <main>
-        <Hero />
-        <Marquee items={tickerItems} />
-        <Stats />
-        <Reviews />
-        <Menu />
-        <Gallery />
-        <Testimonials />
-      </main>
-      <Footer />
+      {/* Amber page frame: body is marigold, the site lives on a rounded charcoal canvas.
+          overflow-clip (not hidden) so the sticky navbar keeps working. */}
+      <div className="p-2 sm:p-3">
+        <div className="relative overflow-clip rounded-2xl bg-night-950 ring-1 ring-night-700/70 sm:rounded-[1.75rem]">
+          <Navbar />
+          <main>
+            <Hero />
+            <Marquee items={tickerItems} />
+            <Reviews />
+            <Menu />
+            <Stats />
+            <Gallery />
+            <Testimonials />
+          </main>
+          <Footer />
+        </div>
+      </div>
       <BackToTop />
     </>
   );

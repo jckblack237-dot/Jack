@@ -47,7 +47,7 @@ export default function Lightbox({ photos, index, onClose, onIndexChange }: Ligh
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       onClick={onClose}
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-ink-950/90 p-4 backdrop-blur-sm"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-night-950/95 p-4 backdrop-blur-sm"
     >
       <button
         onClick={(e) => {
@@ -55,12 +55,12 @@ export default function Lightbox({ photos, index, onClose, onIndexChange }: Ligh
           onClose();
         }}
         aria-label="Close"
-        className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-sand-50/10 text-sand-50 transition-colors hover:bg-sand-50/20 sm:right-6 sm:top-6"
+        className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-cream-50/10 text-cream-50 transition-colors hover:bg-amber-400 hover:text-night-950 sm:right-6 sm:top-6"
       >
         <X size={22} />
       </button>
 
-      <span className="absolute left-4 top-4 font-body text-sm text-sand-50/70 sm:left-6 sm:top-6">
+      <span className="absolute left-4 top-4 font-body text-sm text-cream-100/60 sm:left-6 sm:top-6">
         {index + 1} / {photos.length}
       </span>
 
@@ -70,7 +70,7 @@ export default function Lightbox({ photos, index, onClose, onIndexChange }: Ligh
           go(index - 1, -1);
         }}
         aria-label="Previous photo"
-        className="absolute left-2 flex h-11 w-11 items-center justify-center rounded-full bg-sand-50/10 text-sand-50 transition-colors hover:bg-sand-50/20 sm:left-5"
+        className="absolute left-2 flex h-11 w-11 items-center justify-center rounded-full bg-cream-50/10 text-cream-50 transition-colors hover:bg-amber-400 hover:text-night-950 sm:left-5"
       >
         <ChevronLeft size={24} />
       </button>
@@ -92,7 +92,7 @@ export default function Lightbox({ photos, index, onClose, onIndexChange }: Ligh
             />
           </AnimatePresence>
         </div>
-        <p className="mt-4 text-center font-body text-sm text-sand-100/80">{photo.caption}</p>
+        <p className="mt-4 text-center font-body text-sm text-cream-100/70">{photo.caption}</p>
       </div>
 
       <button
@@ -101,7 +101,7 @@ export default function Lightbox({ photos, index, onClose, onIndexChange }: Ligh
           go(index + 1, 1);
         }}
         aria-label="Next photo"
-        className="absolute right-2 flex h-11 w-11 items-center justify-center rounded-full bg-sand-50/10 text-sand-50 transition-colors hover:bg-sand-50/20 sm:right-5"
+        className="absolute right-2 flex h-11 w-11 items-center justify-center rounded-full bg-cream-50/10 text-cream-50 transition-colors hover:bg-amber-400 hover:text-night-950 sm:right-5"
       >
         <ChevronRight size={24} />
       </button>
