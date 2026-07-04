@@ -12,13 +12,13 @@ export default function StarRating({ rating, size = 16, className = '' }: StarRa
 
   return (
     <div className={`relative inline-flex ${className}`} aria-label={`Rated ${rating} out of 5`}>
-      <div className="flex gap-0.5 text-ink-200">
+      <div className="flex gap-0.5 text-night-600">
         {Array.from({ length: 5 }).map((_, i) => (
           <Star key={i} size={size} strokeWidth={1.5} fill="currentColor" />
         ))}
       </div>
       <motion.div
-        className="absolute inset-0 flex gap-0.5 overflow-hidden text-coral-500"
+        className="absolute inset-0 flex gap-0.5 overflow-hidden text-amber-400"
         initial={{ width: 0 }}
         whileInView={{ width: `${percent}%` }}
         viewport={{ once: true }}

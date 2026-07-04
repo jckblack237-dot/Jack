@@ -30,17 +30,15 @@ export default function Testimonials() {
 
   return (
     <section
-      className="relative overflow-hidden bg-lagoon-50 py-20 sm:py-28"
+      className="relative overflow-hidden bg-night-900 py-20 sm:py-28"
       onMouseEnter={() => (paused.current = true)}
       onMouseLeave={() => (paused.current = false)}
     >
-      <Quote className="absolute left-1/2 top-10 h-40 w-40 -translate-x-1/2 text-lagoon-700/5 sm:h-56 sm:w-56" />
+      <Quote className="absolute left-1/2 top-10 h-40 w-40 -translate-x-1/2 text-cream-50/[0.04] sm:h-56 sm:w-56" />
 
       <div className="relative mx-auto max-w-3xl px-6 text-center">
-        <span className="font-body text-xs font-bold uppercase tracking-[0.25em] text-coral-600">
-          Guest Stories
-        </span>
-        <h2 className="mt-3 font-display text-3xl font-semibold text-ink-900 sm:text-4xl">
+        <span className="font-script text-lg text-amber-400 sm:text-xl">guest stories</span>
+        <h2 className="mt-3 font-display text-3xl font-semibold text-cream-50 sm:text-4xl">
           What other diners are saying
         </h2>
 
@@ -59,21 +57,21 @@ export default function Testimonials() {
               onDragEnd={onDragEnd}
               className="absolute inset-0 flex cursor-grab flex-col items-center justify-center active:cursor-grabbing"
             >
-              <div className="flex gap-1 text-coral-500">
+              <div className="flex gap-1 text-amber-400">
                 {Array.from({ length: t.rating }).map((_, i) => (
                   <Star key={i} size={16} fill="currentColor" />
                 ))}
               </div>
-              <p className="mt-5 text-balance font-display text-xl italic leading-relaxed text-ink-800 sm:text-2xl">
+              <p className="mt-5 text-balance font-display text-xl italic leading-relaxed text-cream-100 sm:text-2xl">
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="mt-6 flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-lagoon-700 font-body text-sm font-bold text-sand-50">
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-400 font-body text-sm font-bold text-night-950">
                   {t.name.charAt(0)}
                 </span>
                 <div className="text-left">
-                  <p className="font-body text-sm font-bold text-ink-900">{t.name}</p>
-                  <p className="font-body text-xs text-ink-500">{t.origin}</p>
+                  <p className="font-body text-sm font-bold text-cream-50">{t.name}</p>
+                  <p className="font-body text-xs text-cream-100/50">{t.origin}</p>
                 </div>
               </div>
             </motion.div>
@@ -84,7 +82,7 @@ export default function Testimonials() {
           <button
             onClick={() => go(index - 1, -1)}
             aria-label="Previous testimonial"
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-ink-600 shadow-sm transition-colors hover:bg-lagoon-700 hover:text-sand-50"
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-night-800 text-cream-100/70 ring-1 ring-cream-50/10 transition-colors hover:bg-amber-400 hover:text-night-950"
           >
             <ChevronLeft size={16} />
           </button>
@@ -95,12 +93,12 @@ export default function Testimonials() {
                 key={item.id}
                 onClick={() => go(i, i > index ? 1 : -1)}
                 aria-label={`Go to testimonial ${i + 1}`}
-                className="relative h-2.5 w-2.5 rounded-full bg-ink-900/15"
+                className="relative h-2.5 w-2.5 rounded-full bg-cream-50/15"
               >
                 {i === index && (
                   <motion.span
                     layoutId="testimonial-dot"
-                    className="absolute inset-0 rounded-full bg-coral-500"
+                    className="absolute inset-0 rounded-full bg-amber-400"
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -111,7 +109,7 @@ export default function Testimonials() {
           <button
             onClick={() => go(index + 1, 1)}
             aria-label="Next testimonial"
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-ink-600 shadow-sm transition-colors hover:bg-lagoon-700 hover:text-sand-50"
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-night-800 text-cream-100/70 ring-1 ring-cream-50/10 transition-colors hover:bg-amber-400 hover:text-night-950"
           >
             <ChevronRight size={16} />
           </button>
