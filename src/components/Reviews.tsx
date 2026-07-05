@@ -58,7 +58,7 @@ export default function Reviews() {
         <SectionHeading
           eyebrow="the directory"
           title="Every table worth the trip"
-          description="Twenty of the Maldives' most-loved restaurants — undersea domes, overwater decks, and the best of Malé, Hulhumalé and the nearby islands — each with its menu, photos, an honest review and directions."
+          description="Twenty-five of the Maldives' most-loved restaurants — undersea domes, overwater decks, and the best of Malé, Hulhumalé and the nearby islands — each with its menu, photos, an honest review and directions."
         />
 
         {/* Location filter */}

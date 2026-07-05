@@ -515,6 +515,98 @@ export const fullMenus: Record<string, MenuSection[]> = {
     },
   ],
 
+  'salt-cafe-male': [
+    {
+      title: 'Mains',
+      items: [
+        { name: 'Peri-Peri Chicken Wrap', description: 'Grilled, garlic mayo, fries', price: 8, image: dish(ids.mainSeafoodTable) },
+        { name: 'Beef Lasagna', description: 'Baked to order, garlic bread', price: 10, image: dish(ids.mainSeafoodPlate) },
+      ],
+    },
+    {
+      title: 'Shakes & Sweets',
+      items: [
+        { name: 'Oreo Cheesecake Shake', description: 'A dessert with a straw', price: 5.5, image: dish(ids.cityCoffeeCups) },
+        { name: 'Brownie & Ice Cream', description: 'Warm, fudgy, shareable', price: 5, image: dish(ids.dessertBerries) },
+      ],
+    },
+  ],
+
+  'thai-wok-male': [
+    {
+      title: 'Starters',
+      items: [
+        { name: 'Tom Yum Soup', description: 'Prawn or chicken, proper sour', price: 8, image: dish(ids.starterShrimp) },
+        { name: 'Fish Cakes, Cucumber Relish', description: 'Springy, chilli-flecked', price: 7, image: dish(ids.starterShells) },
+      ],
+    },
+    {
+      title: 'From the Wok',
+      items: [
+        { name: 'Phad Kra Pao Beef', description: 'Holy basil, fried egg on rice', price: 11, image: dish(ids.mainSeafoodTable) },
+        { name: 'Pineapple Fried Rice', description: 'Served in the pineapple, cashews', price: 12, image: dish(ids.mainSeafoodPlate) },
+      ],
+    },
+    {
+      title: 'Desserts & Drinks',
+      items: [
+        { name: 'Banana Fritters, Honey', description: 'Crisp, hot, gone fast', price: 5, image: dish(ids.dessertMangoTart) },
+        { name: 'Lemongrass Iced Tea', description: 'Brewed in-house', price: 3, image: dish(ids.drinkCitrus) },
+      ],
+    },
+  ],
+
+  'belle-amie-male': [
+    {
+      title: 'Patisserie Counter',
+      items: [
+        { name: 'Éclair au Chocolat', description: 'Choux, chantilly, dark glaze', price: 3, image: dish(ids.cityCake) },
+        { name: 'Blueberry Cheesecake Slice', description: 'Baked style, biscuit base', price: 4, image: dish(ids.dessertBerries) },
+      ],
+    },
+    {
+      title: 'Bistro Plates',
+      items: [
+        { name: 'Club Sandwich', description: 'Chicken, egg, toasted triple-deck', price: 7, image: dish(ids.cityBurgers) },
+        { name: 'Mushroom Crêpe', description: 'Creamy, herbed, vegetarian', price: 6, image: dish(ids.mainWhitePlate) },
+      ],
+    },
+  ],
+
+  'meraki-male': [
+    {
+      title: 'Brews',
+      items: [
+        { name: 'Espresso / Long Black', description: 'House island-profile roast', price: 3, image: dish(ids.cityCoffeeCups) },
+        { name: 'Cold Brew, 18hr', description: 'Steeped overnight, over ice', price: 5, image: dish(ids.cityCoffeeTable) },
+      ],
+    },
+    {
+      title: 'Brunch',
+      items: [
+        { name: 'Shakshuka, Sourdough', description: 'Baked eggs, spiced tomato', price: 9, image: dish(ids.mainWhitePlate) },
+        { name: 'Banana Bread, Espresso Butter', description: 'Toasted thick-cut', price: 5, image: dish(ids.dessertMangoTart) },
+      ],
+    },
+  ],
+
+  'dawn-cafe-male': [
+    {
+      title: 'Short Eats (Hedhikaa)',
+      items: [
+        { name: 'Bajiya (3pc)', description: 'Fried tuna-coconut parcels', price: 1, image: dish(ids.starterShells) },
+        { name: 'Gulha (3pc)', description: 'Round smoked-fish dumplings', price: 1, image: dish(ids.starterShrimp) },
+      ],
+    },
+    {
+      title: 'Plates & Tea',
+      items: [
+        { name: 'Roshi & Tuna Curry', description: 'The everyday lunch', price: 2.5, image: dish(ids.mainSeafoodTable) },
+        { name: 'Black Tea, Condensed Milk', description: 'Kiru sai — the sweeter glass', price: 0.7, image: dish(ids.cityCoffeeTable) },
+      ],
+    },
+  ],
+
   'nihonbashi-crossroads': [
     {
       title: 'Sushi & Sashimi',

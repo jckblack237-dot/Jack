@@ -43,4 +43,15 @@ export const ids = {
   drinkBeach: '1645231286309-2beccdfae91c',
   drinkLedge: '1721407435583-8d0ec0c18cc4',
   drinkCitrus: '1690085602849-4b55549f3103',
+
+  // City (Malé / Hulhumalé) venues — urban interiors and café scenes
+  cityInteriorDark: '1517248135467-4c7edcad34c4',
+  cityInteriorWarm: '1552566626-52f8b828add9',
+  cityCafeCounter: '1521017432531-fbd92d768814',
+  cityCafePlants: '1554118811-1e0d58224f24',
+  cityCafeStreet: '1559925393-8be0ec4767c8',
+  cityCoffeeTable: '1445116572660-236099ec97a0',
+  cityCoffeeCups: '1509042239860-f550ce710b93',
+  cityBurgers: '1466978913421-dad2ebd01d17',
+  cityCake: '1464349095431-e9a21285b5f3',
 } as const;

@@ -421,7 +421,7 @@ export const restaurants: Restaurant[] = [
       'Malé\'s garden-courtyard café, famous for its house-made ice cream — the cheapest great meal in this guide by a mile.',
     review:
       'Seagull Café House is where Malé actually eats: a shaded garden courtyard folded improbably into the capital\'s densest blocks, serving grills, sandwiches, Maldivian breakfasts and the ice cream it has been famous for across generations. Order the mas huni with roshi in the morning like a local — smoked tuna, coconut and onion, the national breakfast — or a grilled chicken plate at lunch, and leave room for two scoops from the ice-cream counter regardless. Nothing costs more than a resort espresso. Between the fish market and the friday mosque on your city walk, this is the stop that makes the capital make sense.',
-    image: img(ids.galleryPoolLounge, 1200),
+    image: img(ids.cityCafePlants, 1200),
     menu: [
       { name: 'Mas Huni & Roshi', description: 'The Maldivian breakfast — smoked tuna, coconut, flatbread', price: 6, image: dish(ids.mainSeafoodTable) },
       { name: 'Grilled Chicken Plate', description: 'Char-grilled, garlic rice, courtyard classic', price: 11, image: dish(ids.mainWhitePlate) },
@@ -451,7 +451,7 @@ export const restaurants: Restaurant[] = [
       'A decades-old Malé standby where office workers, families and travellers share one enormous menu of Maldivian and international staples.',
     review:
       'Symphony is the restaurant every Malé resident has been taken to by an aunt: decades old, reliably good, and blessed with a menu long enough to end any group argument. The Maldivian pages are the reason to come — fihunu mas (chilli-rubbed grilled fish), proper kulhimas with roshi, and a tuna fried rice that shows up on half the tables — but the club sandwiches and noodles hold their own for the homesick. Portions are generous, prices are city-honest, and the air conditioning is heroic after a hot lap of the capital. Not fancy; exactly right.',
-    image: img(ids.heroMain, 1200),
+    image: img(ids.cityInteriorDark, 1200),
     menu: [
       { name: 'Fihunu Mas', description: 'Chilli-and-lime rubbed reef fish, grilled whole', price: 12, image: dish(ids.mainWhitePlate) },
       { name: 'Kulhimas & Roshi', description: 'Spiced tuna simmered dark and rich, flatbread', price: 8, image: dish(ids.mainSeafoodTable) },
@@ -481,7 +481,7 @@ export const restaurants: Restaurant[] = [
       'A harbourfront café on Malé\'s north waterfront — grab an upstairs window seat and watch the dhonis unload while you eat.',
     review:
       'Shell Beans owns the best people-watching real estate in the capital: an upstairs room over Boduthakurufaanu Magu where the window seats look straight onto the fishing harbour. Come at golden hour, order a tuna melt and one of the fresh juices the place is quietly famous for, and watch dhonis unload the catch your dinner will become elsewhere. The menu is café-simple — sandwiches, pastas, all-day breakfasts, good coffee — and the kitchen is quick, which matters when you are squeezing lunch between the fish market and the ferry. A dependable first stop off the airport boat.',
-    image: img(ids.galleryWalkway, 1200),
+    image: img(ids.cityCafeCounter, 1200),
     menu: [
       { name: 'Tuna Melt Panini', description: 'Local yellowfin, cheddar, pressed to order', price: 7, image: dish(ids.starterShells) },
       { name: 'All-Day Big Breakfast', description: 'Eggs, chicken sausage, toast, grilled tomato', price: 9, image: dish(ids.mainWhitePlate) },
@@ -571,7 +571,7 @@ export const restaurants: Restaurant[] = [
       'The dependable all-day café on Hulhumalé\'s beach strip — proper flat whites and big breakfasts before your flight or ferry.',
     review:
       'Hulhumalé\'s beachfront road has sprouted a strip of cafés, and The Coffee Club is the one that answers the two questions that matter near an airport: is the coffee actually good, and can I get real food at odd hours. Yes and yes — flat whites pulled properly, an all-day breakfast that lands hot and fast, and salads and burgers for everything after. Tables at the front catch the sea breeze off the artificial beach, which is livelier with local families at sunset than any resort deck. It is a franchise, it is not romantic, and when your red-eye lands at 5am it is exactly what you want.',
-    image: img(ids.drinkCitrus, 1200),
+    image: img(ids.cityBurgers, 1200),
     menu: [
       { name: 'The Big Breakfast', description: 'Eggs any style, chicken sausage, hash, toast', price: 12, image: dish(ids.mainWhitePlate) },
       { name: 'Eggs Benedict', description: 'Poached, hollandaise, toasted muffin', price: 10, image: dish(ids.starterShells) },
@@ -673,6 +673,156 @@ export const restaurants: Restaurant[] = [
       time: 'About 15 minutes by boat from Malé',
       tip: 'Sit at the sushi counter and ask what came off the boats that morning.',
       mapsUrl: maps('Nihonbashi Blue, CROSSROADS Maldives'),
+    },
+  },
+  {
+    id: 'salt-cafe-male',
+    name: 'Salt Café & Restaurant',
+    venue: 'Independent',
+    island: 'Malé',
+    atoll: 'Kaafu Atoll (Capital)',
+    category: 'city',
+    cuisineKey: 'cafe',
+    cuisine: 'Café · Continental & Grills',
+    price: '$',
+    rating: 4.3,
+    tags: ['Young Malé Crowd', 'Late-Night Kitchen', 'Milkshakes'],
+    excerpt:
+      'The capital\'s hangout café — continental plates, famous milkshakes and a kitchen that keeps going long after the offices close.',
+    review:
+      'Salt is where young Malé takes its evenings: a busy, friendly room that does the café-continental repertoire — pastas, grilled chicken, loaded sandwiches — properly and keeps serving late by capital standards. The milkshakes have a fanbase of their own, and the corner tables fill with students and office crews from sundown. It is not trying to be fancy; it is trying to be the place you end up twice a week, and it succeeds. Come after a harbour-front walk when the day finally cools.',
+    image: img(ids.cityInteriorWarm, 1200),
+    menu: [
+      { name: 'Salt Grilled Chicken', description: 'Half chicken, pepper sauce, fries', price: 11, image: dish(ids.mainWhitePlate) },
+      { name: 'Creamy Chicken Pasta', description: 'The table default, generous', price: 9, image: dish(ids.mainSeafoodPlate) },
+      { name: 'Loaded Beef Sandwich', description: 'Toasted, cheese, caramelised onion', price: 8, image: dish(ids.cityBurgers) },
+      { name: 'Salted Caramel Shake', description: 'The famous one', price: 5, image: dish(ids.cityCoffeeCups) },
+    ],
+    directions: {
+      transfer: 'Airport ferry or taxi across the Sinamalé Bridge to Malé city centre',
+      time: 'About 15 minutes from the airport, then a short walk',
+      tip: 'Evenings get busy after 8 — earlier for a quiet table, later for the buzz.',
+      mapsUrl: maps('Salt Café Restaurant, Malé, Maldives'),
+    },
+  },
+  {
+    id: 'thai-wok-male',
+    name: 'Thai Wok',
+    venue: 'Independent',
+    island: 'Malé',
+    atoll: 'Kaafu Atoll (Capital)',
+    category: 'city',
+    cuisineKey: 'thai',
+    cuisine: 'Thai · Dinner House',
+    price: '$$',
+    rating: 4.4,
+    tags: ['Proper Wok Heat', 'Quiet Dining Room', 'Group Friendly'],
+    excerpt:
+      'Malé\'s other serious Thai — a calm upstairs dining room where the wok dishes come out fast, hot and unapologetically spiced.',
+    review:
+      'Where Sala Thai brings occasion and Lemongrass brings speed, Thai Wok sits contentedly between: a quiet, well-run dining room that groups book for birthdays and couples keep to themselves. The kitchen\'s wok work is the draw — crispy chicken with cashew nuts arriving still hissing, morning glory charred in seconds, a green curry that respects the chilli. Portions suit sharing and the bill stays gentle. If Sala Thai is full, do not treat this as the consolation prize; regulars argue it is the first choice.',
+    image: img(ids.cityInteriorWarm, 1200),
+    menu: [
+      { name: 'Cashew Chicken', description: 'Wok-seared, dried chilli, spring onion', price: 12, image: dish(ids.mainSeafoodTable) },
+      { name: 'Stir-Fried Morning Glory', description: 'Garlic, oyster sauce, wok breath', price: 7, image: dish(ids.starterShells) },
+      { name: 'Green Curry, Reef Fish', description: 'Local catch in a Bangkok classic', price: 14, image: dish(ids.mainWhitePlate) },
+      { name: 'Coconut Ice Cream, Peanuts', description: 'Served in the shell', price: 5, image: dish(ids.dessertCoconutBowl) },
+    ],
+    directions: {
+      transfer: 'Airport ferry or taxi to Malé; the dining room is in the central grid, upstairs',
+      time: 'About 15 minutes from the airport, then a short walk',
+      tip: 'Book for groups of six or more — the round tables go first.',
+      mapsUrl: maps('Thai Wok Restaurant, Malé, Maldives'),
+    },
+  },
+  {
+    id: 'belle-amie-male',
+    name: 'Belle Amie Bistro',
+    venue: 'Independent',
+    island: 'Malé',
+    atoll: 'Kaafu Atoll (Capital)',
+    category: 'city',
+    cuisineKey: 'cafe',
+    cuisine: 'Bistro · Cakes & Bakes',
+    price: '$',
+    rating: 4.5,
+    tags: ['Celebration Cakes', 'Patisserie Counter', 'Birthday Institution'],
+    excerpt:
+      'The capital\'s celebration-cake institution — a patisserie counter half of Malé has ordered a birthday cake from, with a bistro menu alongside.',
+    review:
+      'Every city has the bakery whose boxes appear at every family gathering; in Malé it is Belle Amie. The counter runs from layered celebration cakes to éclairs and cheesecakes, and the bistro side backs it up with crêpes, sandwiches and decent coffee for eating in. Locals swear by ordering whole cakes a day ahead — the pandan and chocolate-fudge layers disappear by afternoon. It is bright, sugary, unpretentious, and precisely what a hot city block needs at four o\'clock.',
+    image: img(ids.cityCake, 1200),
+    menu: [
+      { name: 'Chocolate Fudge Slice', description: 'The counter bestseller', price: 4, image: dish(ids.cityCake) },
+      { name: 'Pandan Layer Cake', description: 'Order whole cakes a day ahead', price: 3.5, image: dish(ids.dessertBerries) },
+      { name: 'Chicken & Cheese Crêpe', description: 'Savoury side of the menu', price: 6, image: dish(ids.mainWhitePlate) },
+      { name: 'Iced Café Mocha', description: 'Sweet, cold, cake\'s best friend', price: 4, image: dish(ids.cityCoffeeCups) },
+    ],
+    directions: {
+      transfer: 'Airport ferry or taxi to Malé city centre',
+      time: 'About 15 minutes from the airport, then a short walk',
+      tip: 'Whole celebration cakes need a day\'s notice — slices and éclairs are walk-in.',
+      mapsUrl: maps('Belle Amie Bistro, Malé, Maldives'),
+    },
+  },
+  {
+    id: 'meraki-male',
+    name: 'Meraki Coffee Roasters',
+    venue: 'Independent Roastery',
+    island: 'Malé',
+    atoll: 'Kaafu Atoll (Capital)',
+    category: 'city',
+    cuisineKey: 'cafe',
+    cuisine: 'Specialty Coffee · Brunch',
+    price: '$',
+    rating: 4.6,
+    tags: ['Own Roastery', 'Specialty Coffee', 'Brunch Plates'],
+    excerpt:
+      'The capital\'s specialty-coffee flagbearer — beans roasted for the islands, flat whites that would pass in Melbourne, and proper brunch.',
+    review:
+      'Meraki is the reason visiting baristas stop dismissing Malé: an actual specialty roastery in the capital, pulling balanced shots from beans profiled for the climate and backing them with a short, confident brunch menu. The flat white is the benchmark order; the pour-over list rotates; the avocado toast and breakfast bowls hold their own against any resort brunch at a fifth of the price. Seats are few and the morning rush is real — mid-afternoon is the connoisseur\'s window. If you drink coffee seriously, this is your Malé headquarters.',
+    image: img(ids.cityCoffeeCups, 1200),
+    menu: [
+      { name: 'Flat White', description: 'House roast, textured milk', price: 4, image: dish(ids.cityCoffeeCups) },
+      { name: 'Single-Origin Pour-Over', description: 'Rotating beans, ask the bar', price: 5.5, image: dish(ids.cityCoffeeTable) },
+      { name: 'Avocado Toast, Chilli Egg', description: 'Sourdough, dukkah', price: 8, image: dish(ids.starterShells) },
+      { name: 'Breakfast Bowl', description: 'Granola, tropical fruit, yoghurt', price: 7, image: dish(ids.dessertBerries) },
+    ],
+    directions: {
+      transfer: 'Airport ferry or taxi to Malé; the roastery sits in the city grid',
+      time: 'About 15 minutes from the airport, then a short walk',
+      tip: 'Beans are sold by the bag — the island-profile roast is the souvenir that beats a fridge magnet.',
+      mapsUrl: maps('Meraki Coffee Roasters, Malé, Maldives'),
+    },
+  },
+  {
+    id: 'dawn-cafe-male',
+    name: 'Dawn Café',
+    venue: 'Classic Sai Hotaa',
+    island: 'Malé',
+    atoll: 'Kaafu Atoll (Capital)',
+    category: 'city',
+    cuisineKey: 'maldivian',
+    cuisine: 'Maldivian · Tea Shop',
+    price: '$',
+    rating: 4.2,
+    tags: ['Sai Hotaa', 'Short Eats', 'Cheapest in Guide'],
+    excerpt:
+      'A classic Malé tea shop — short eats, sweet black tea and the national breakfast, at prices that barely register.',
+    review:
+      'To understand how the capital actually starts its day, skip the cafés and take a formica table at a sai hotaa — and Dawn Café is a fine one to learn in. Point at the glass case of hedhikaa (short eats): bajiya, gulha, spicy fish rolls, taken with a glass of hot, sweet black tea. Mornings bring mas huni with roshi; evenings, groups of men debating football over endless refills. Nothing costs more than a couple of dollars, nobody hurries you, and no resort breakfast will teach you a tenth as much about the Maldives. Go hungry, point boldly.',
+    image: img(ids.cityCafeStreet, 1200),
+    menu: [
+      { name: 'Hedhikaa Plate', description: 'Assorted short eats from the case', price: 2.5, image: dish(ids.starterShells) },
+      { name: 'Mas Huni & Roshi', description: 'The national breakfast, done daily', price: 3, image: dish(ids.mainSeafoodTable) },
+      { name: 'Kulhi Boakibaa Slice', description: 'Spiced fish cake, tea-shop staple', price: 1.5, image: dish(ids.mainSeafoodPlate) },
+      { name: 'Sai (Sweet Black Tea)', description: 'The glass that fuels the city', price: 0.5, image: dish(ids.cityCoffeeTable) },
+    ],
+    directions: {
+      transfer: 'Airport ferry or taxi to Malé; tea shops cluster near the harbour and market streets',
+      time: 'About 15 minutes from the airport, then a short walk toward the fish market',
+      tip: 'Peak local hours are dawn and dusk — go at 7am with the harbour workers for the real thing.',
+      mapsUrl: maps('Dawn Café, Malé, Maldives'),
     },
   },
 ];

@@ -3,10 +3,10 @@ import { Anchor, CookingPot, MapPin, Star } from 'lucide-react';
 import AnimatedCounter from './AnimatedCounter';
 
 const stats = [
-  { icon: CookingPot, value: 20, label: 'Celebrated Tables' },
+  { icon: CookingPot, value: 25, label: 'Celebrated Tables' },
   { icon: Anchor, value: 4, label: 'Undersea Restaurants' },
   { icon: MapPin, value: 13, label: 'Islands Visited' },
-  { icon: Star, value: 4.6, decimals: 1, label: 'Average Rating' },
+  { icon: Star, value: 4.5, decimals: 1, label: 'Average Rating' },
 ];
 
 export default function Stats() {
