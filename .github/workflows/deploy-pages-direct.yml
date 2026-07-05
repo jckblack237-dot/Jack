@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages (direct artifact)
 # Fallback deployment path: publishes the build as a Pages artifact via
 # actions/deploy-pages, bypassing the branch-based internal Pages builder.
 on:
+  push:
+    branches:
+      - claude/maldives-restaurant-review-site-xzgzdc
   workflow_dispatch:
 
 permissions:
@@ -11,7 +14,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-direct
   cancel-in-progress: true
 
 jobs:
