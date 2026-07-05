@@ -12,6 +12,9 @@ dist-ssr
 *.local
 *.tsbuildinfo
 
+# Backend runtime data
+server/data
+
 # Editor
 .vscode/*
 !.vscode/extensions.json

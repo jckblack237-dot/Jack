@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { CheckCircle2, Facebook, Instagram, Mail, MapPin, Send } from 'lucide-react';
+import { subscribe } from '../lib/api';
 
 const exploreLinks = [
   { id: 'reviews', label: 'Restaurants' },
@@ -12,9 +13,10 @@ export default function Footer() {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!email.trim()) return;
+    await subscribe(email);
     setSubmitted(true);
     setEmail('');
   };

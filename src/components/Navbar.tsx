@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
 import { Menu as MenuIcon, Search, X } from 'lucide-react';
+import { openBooking } from '../lib/booking';
+import SearchOverlay from './SearchOverlay';
 
 const links = [
   { id: 'home', label: 'Home' },
@@ -14,6 +16,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState<string>('home');
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -87,15 +90,15 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <button
-            onClick={() => handleNavClick('reviews')}
+            onClick={() => setSearchOpen(true)}
             aria-label="Search restaurants"
-            className="hidden h-9 w-9 items-center justify-center rounded-full text-cream-100/60 transition-colors hover:text-amber-400 sm:flex"
+            className="flex h-9 w-9 items-center justify-center rounded-full text-cream-100/60 transition-colors hover:text-amber-400"
           >
             <Search size={17} />
           </button>
 
           <button
-            onClick={() => handleNavClick('visit')}
+            onClick={() => openBooking()}
             className="hidden rounded-full bg-amber-400 px-5 py-2.5 font-body text-[11px] font-bold uppercase tracking-[0.14em] text-night-950 transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-300 sm:inline-flex"
           >
             Book a Table
@@ -133,7 +136,10 @@ export default function Navbar() {
                 </button>
               ))}
               <button
-                onClick={() => handleNavClick('visit')}
+                onClick={() => {
+                  setMobileOpen(false);
+                  openBooking();
+                }}
                 className="mb-2 mt-2 rounded-full bg-amber-400 px-5 py-3 text-center font-body text-xs font-bold uppercase tracking-[0.14em] text-night-950"
               >
                 Book a Table
@@ -141,6 +147,10 @@ export default function Navbar() {
             </div>
           </motion.div>
         )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {searchOpen && <SearchOverlay onClose={() => setSearchOpen(false)} />}
       </AnimatePresence>
     </header>
   );

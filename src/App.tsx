@@ -11,6 +11,8 @@ import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
+import BookingModal from './components/BookingModal';
+import { OPEN_BOOKING_EVENT } from './lib/booking';
 
 const tickerItems = [
   'Undersea Dining',
@@ -23,6 +25,7 @@ const tickerItems = [
 
 export default function App() {
   const [loading, setLoading] = useState(true);
+  const [booking, setBooking] = useState<{ restaurantId: string | null } | null>(null);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1300);
@@ -32,6 +35,13 @@ export default function App() {
   useEffect(() => {
     document.body.style.overflow = loading ? 'hidden' : '';
   }, [loading]);
+
+  useEffect(() => {
+    const onOpen = (e: Event) =>
+      setBooking({ restaurantId: (e as CustomEvent<string | null>).detail });
+    window.addEventListener(OPEN_BOOKING_EVENT, onOpen);
+    return () => window.removeEventListener(OPEN_BOOKING_EVENT, onOpen);
+  }, []);
 
   return (
     <>
@@ -55,6 +65,12 @@ export default function App() {
         </div>
       </div>
       <BackToTop />
+
+      <AnimatePresence>
+        {booking && (
+          <BookingModal initialRestaurantId={booking.restaurantId} onClose={() => setBooking(null)} />
+        )}
+      </AnimatePresence>
     </>
   );
 }
