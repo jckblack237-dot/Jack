@@ -393,9 +393,9 @@ export const restaurants: Restaurant[] = [
       'Every Malé local has a Sala Thai story, and after one dinner you will understand why: this is polished, generous Thai cooking at a third of resort prices, in a teak-panelled dining room that has hosted half the city\'s anniversaries. The duck curry is the house legend — roast duck, lychees, a red curry with real depth — and the som tam arrives at honest Thai heat. Malé is dry (no alcohol outside resorts), so trade the wine list for a lime juice with sea salt and watch the city\'s dinner crowd come and go. If your itinerary includes a night in the capital, this is the table to book.',
     image: img(ids.galleryWicker, 1200),
     menu: [
-      { name: 'Roast Duck & Lychee Curry', description: 'The house signature, red curry, jasmine rice', price: 18, image: dish(ids.mainSeafoodTable) },
+      { name: 'Roast Duck & Lychee Curry', description: 'The house signature, red curry, jasmine rice', price: 18, image: dish(ids.foodThaiRedCurry) },
       { name: 'Som Tam Thai', description: 'Green papaya salad, proper heat, roasted peanuts', price: 9, image: dish(ids.starterShells) },
-      { name: 'Pad Thai Goong', description: 'River prawns, tamarind, banana blossom', price: 14, image: dish(ids.starterShrimp) },
+      { name: 'Pad Thai Goong', description: 'River prawns, tamarind, banana blossom', price: 14, image: dish(ids.foodThaiPadThai) },
       { name: 'Steamed Reef Grouper, Lime & Chilli', description: 'Whole fish, Thai-style, for two', price: 26, image: dish(ids.mainWhitePlate) },
     ],
     directions: {
@@ -451,11 +451,11 @@ export const restaurants: Restaurant[] = [
       'A decades-old Malé standby where office workers, families and travellers share one enormous menu of Maldivian and international staples.',
     review:
       'Symphony is the restaurant every Malé resident has been taken to by an aunt: decades old, reliably good, and blessed with a menu long enough to end any group argument. The Maldivian pages are the reason to come — fihunu mas (chilli-rubbed grilled fish), proper kulhimas with roshi, and a tuna fried rice that shows up on half the tables — but the club sandwiches and noodles hold their own for the homesick. Portions are generous, prices are city-honest, and the air conditioning is heroic after a hot lap of the capital. Not fancy; exactly right.',
-    image: img(ids.cityInteriorDark, 1200),
+    image: img(ids.foodFishDinner, 1200),
     menu: [
-      { name: 'Fihunu Mas', description: 'Chilli-and-lime rubbed reef fish, grilled whole', price: 12, image: dish(ids.mainWhitePlate) },
+      { name: 'Fihunu Mas', description: 'Chilli-and-lime rubbed reef fish, grilled whole', price: 12, image: dish(ids.foodFishDinner) },
       { name: 'Kulhimas & Roshi', description: 'Spiced tuna simmered dark and rich, flatbread', price: 8, image: dish(ids.mainSeafoodTable) },
-      { name: 'Tuna Fried Rice', description: 'The Malé office-lunch default, done properly', price: 7, image: dish(ids.mainSeafoodPlate) },
+      { name: 'Tuna Fried Rice', description: 'The Malé office-lunch default, done properly', price: 7, image: dish(ids.foodThaiFriedRice) },
       { name: 'Fresh Watermelon Juice', description: 'Blended to order, no syrup', price: 3, image: dish(ids.drinkCitrus) },
     ],
     directions: {
@@ -481,11 +481,11 @@ export const restaurants: Restaurant[] = [
       'A harbourfront café on Malé\'s north waterfront — grab an upstairs window seat and watch the dhonis unload while you eat.',
     review:
       'Shell Beans owns the best people-watching real estate in the capital: an upstairs room over Boduthakurufaanu Magu where the window seats look straight onto the fishing harbour. Come at golden hour, order a tuna melt and one of the fresh juices the place is quietly famous for, and watch dhonis unload the catch your dinner will become elsewhere. The menu is café-simple — sandwiches, pastas, all-day breakfasts, good coffee — and the kitchen is quick, which matters when you are squeezing lunch between the fish market and the ferry. A dependable first stop off the airport boat.',
-    image: img(ids.cityCafeCounter, 1200),
+    image: img(ids.foodToastie, 1200),
     menu: [
-      { name: 'Tuna Melt Panini', description: 'Local yellowfin, cheddar, pressed to order', price: 7, image: dish(ids.starterShells) },
-      { name: 'All-Day Big Breakfast', description: 'Eggs, chicken sausage, toast, grilled tomato', price: 9, image: dish(ids.mainWhitePlate) },
-      { name: 'Harbour Club Sandwich', description: 'Triple-stack with fries, window-seat classic', price: 8, image: dish(ids.mainSeafoodTable) },
+      { name: 'Tuna Melt Panini', description: 'Local yellowfin, cheddar, pressed to order', price: 7, image: dish(ids.foodToastie) },
+      { name: 'All-Day Big Breakfast', description: 'Eggs, chicken sausage, toast, grilled tomato', price: 9, image: dish(ids.foodEggToast) },
+      { name: 'Harbour Club Sandwich', description: 'Triple-stack with fries, window-seat classic', price: 8, image: dish(ids.foodDeliSandwich) },
       { name: 'Passion-Orange Cooler', description: 'The juice everyone orders twice', price: 4, image: dish(ids.drinkCitrus) },
     ],
     directions: {
@@ -511,11 +511,11 @@ export const restaurants: Restaurant[] = [
       'Malé\'s go-to casual Thai — fast, consistent and busy with locals, with outlets around the city.',
     review:
       'Where Sala Thai is the capital\'s special-occasion Thai, Lemongrass is its everyday one: quick, loud at lunch, and consistent in the way that keeps offices ordering from it for years. The pad krapow arrives properly funky with holy basil, the tom kha comfortingly rich, and the fried rice plates land in minutes. Décor is functional, service is brisk, and the bill for two rarely clears twenty dollars. If you are staying in the city on a budget and want a reliable dinner without thinking, this is it.',
-    image: img(ids.mainSeafoodTable, 1200),
+    image: img(ids.foodThaiPadThai, 1200),
     menu: [
-      { name: 'Chicken Pad Krapow', description: 'Holy basil stir-fry, fried egg, jasmine rice', price: 8, image: dish(ids.mainSeafoodTable) },
-      { name: 'Tom Kha Gai', description: 'Coconut-galangal chicken soup', price: 7, image: dish(ids.starterShells) },
-      { name: 'Prawn Fried Rice', description: 'Wok-fried, local prawns, cucumber', price: 9, image: dish(ids.starterShrimp) },
+      { name: 'Chicken Pad Krapow', description: 'Holy basil stir-fry, fried egg, jasmine rice', price: 8, image: dish(ids.foodThaiFriedRice) },
+      { name: 'Tom Kha Gai', description: 'Coconut-galangal chicken soup', price: 7, image: dish(ids.foodThaiRedCurry) },
+      { name: 'Prawn Fried Rice', description: 'Wok-fried, local prawns, cucumber', price: 9, image: dish(ids.foodThaiPadThai) },
       { name: 'Thai Iced Tea', description: 'Sweet, strong, orange as a sunset', price: 3.5, image: dish(ids.drinkCitrus) },
     ],
     directions: {
@@ -541,11 +541,11 @@ export const restaurants: Restaurant[] = [
       'Hulhumalé\'s favourite Indian — tandoor-fresh naan and generous curries a few streets from the beach.',
     review:
       'Bombay Darbar is the restaurant Hulhumalé residents defend in arguments about where to eat on the island: a proper tandoor, butter chicken with genuine depth rather than sugar, and biryanis that arrive under a dome of steam. The menu runs both north and south — dosas alongside the kebabs — and the kitchen handles spice requests honestly. Hulhumalé\'s grid of cafés is growing fast, but this remains the reliable heart of it: five minutes from the beach, ten from the airport, and cheaper than anything you will eat once your seaplane leaves the capital. Great first dinner if you land late and overnight near the airport.',
-    image: img(ids.mainWhitePlate, 1200),
+    image: img(ids.foodIndianCurryNaan, 1200),
     menu: [
-      { name: 'Butter Chicken', description: 'Tandoor chicken, tomato-makhani gravy', price: 9, image: dish(ids.mainSeafoodTable) },
-      { name: 'Hyderabadi Chicken Biryani', description: 'Sealed and steamed, raita and salan', price: 10, image: dish(ids.mainSeafoodPlate) },
-      { name: 'Garlic Naan (2pc)', description: 'Tandoor-blistered, brushed with ghee', price: 2.5, image: dish(ids.starterShells) },
+      { name: 'Butter Chicken', description: 'Tandoor chicken, tomato-makhani gravy', price: 9, image: dish(ids.foodIndianButterChicken) },
+      { name: 'Hyderabadi Chicken Biryani', description: 'Sealed and steamed, raita and salan', price: 10, image: dish(ids.foodIndianKarahi) },
+      { name: 'Garlic Naan (2pc)', description: 'Tandoor-blistered, brushed with ghee', price: 2.5, image: dish(ids.foodIndianCurryNaan) },
       { name: 'Mango Lassi', description: 'Thick, cold, made with real mango', price: 4, image: dish(ids.dessertMangoTart) },
     ],
     directions: {
@@ -573,10 +573,10 @@ export const restaurants: Restaurant[] = [
       'Hulhumalé\'s beachfront road has sprouted a strip of cafés, and The Coffee Club is the one that answers the two questions that matter near an airport: is the coffee actually good, and can I get real food at odd hours. Yes and yes — flat whites pulled properly, an all-day breakfast that lands hot and fast, and salads and burgers for everything after. Tables at the front catch the sea breeze off the artificial beach, which is livelier with local families at sunset than any resort deck. It is a franchise, it is not romantic, and when your red-eye lands at 5am it is exactly what you want.',
     image: img(ids.cityBurgers, 1200),
     menu: [
-      { name: 'The Big Breakfast', description: 'Eggs any style, chicken sausage, hash, toast', price: 12, image: dish(ids.mainWhitePlate) },
-      { name: 'Eggs Benedict', description: 'Poached, hollandaise, toasted muffin', price: 10, image: dish(ids.starterShells) },
-      { name: 'Grilled Chicken Caesar', description: 'The dependable lunch order', price: 11, image: dish(ids.mainSeafoodTable) },
-      { name: 'Flat White', description: 'Double shot, properly textured milk', price: 4.5, image: dish(ids.drinkLedge) },
+      { name: 'The Big Breakfast', description: 'Eggs any style, chicken sausage, hash, toast', price: 12, image: dish(ids.foodEggToast) },
+      { name: 'Eggs Benedict', description: 'Poached, hollandaise, toasted muffin', price: 10, image: dish(ids.foodEggToast) },
+      { name: 'Grilled Chicken Caesar', description: 'The dependable lunch order', price: 11, image: dish(ids.foodDeliSandwich) },
+      { name: 'Flat White', description: 'Double shot, properly textured milk', price: 4.5, image: dish(ids.cityCoffeeCups) },
     ],
     directions: {
       transfer: 'Taxi or bus from the airport over the link road to Hulhumalé\'s beachfront road',
@@ -691,11 +691,11 @@ export const restaurants: Restaurant[] = [
       'The capital\'s hangout café — continental plates, famous milkshakes and a kitchen that keeps going long after the offices close.',
     review:
       'Salt is where young Malé takes its evenings: a busy, friendly room that does the café-continental repertoire — pastas, grilled chicken, loaded sandwiches — properly and keeps serving late by capital standards. The milkshakes have a fanbase of their own, and the corner tables fill with students and office crews from sundown. It is not trying to be fancy; it is trying to be the place you end up twice a week, and it succeeds. Come after a harbour-front walk when the day finally cools.',
-    image: img(ids.cityInteriorWarm, 1200),
+    image: img(ids.foodChickenBurger, 1200),
     menu: [
-      { name: 'Salt Grilled Chicken', description: 'Half chicken, pepper sauce, fries', price: 11, image: dish(ids.mainWhitePlate) },
+      { name: 'Salt Grilled Chicken', description: 'Half chicken, pepper sauce, fries', price: 11, image: dish(ids.foodChickenBurger) },
       { name: 'Creamy Chicken Pasta', description: 'The table default, generous', price: 9, image: dish(ids.mainSeafoodPlate) },
-      { name: 'Loaded Beef Sandwich', description: 'Toasted, cheese, caramelised onion', price: 8, image: dish(ids.cityBurgers) },
+      { name: 'Loaded Beef Sandwich', description: 'Toasted, cheese, caramelised onion', price: 8, image: dish(ids.foodDeliSandwich) },
       { name: 'Salted Caramel Shake', description: 'The famous one', price: 5, image: dish(ids.cityCoffeeCups) },
     ],
     directions: {
@@ -721,11 +721,11 @@ export const restaurants: Restaurant[] = [
       'Malé\'s other serious Thai — a calm upstairs dining room where the wok dishes come out fast, hot and unapologetically spiced.',
     review:
       'Where Sala Thai brings occasion and Lemongrass brings speed, Thai Wok sits contentedly between: a quiet, well-run dining room that groups book for birthdays and couples keep to themselves. The kitchen\'s wok work is the draw — crispy chicken with cashew nuts arriving still hissing, morning glory charred in seconds, a green curry that respects the chilli. Portions suit sharing and the bill stays gentle. If Sala Thai is full, do not treat this as the consolation prize; regulars argue it is the first choice.',
-    image: img(ids.cityInteriorWarm, 1200),
+    image: img(ids.foodThaiRedCurry, 1200),
     menu: [
-      { name: 'Cashew Chicken', description: 'Wok-seared, dried chilli, spring onion', price: 12, image: dish(ids.mainSeafoodTable) },
+      { name: 'Cashew Chicken', description: 'Wok-seared, dried chilli, spring onion', price: 12, image: dish(ids.foodThaiFriedRice) },
       { name: 'Stir-Fried Morning Glory', description: 'Garlic, oyster sauce, wok breath', price: 7, image: dish(ids.starterShells) },
-      { name: 'Green Curry, Reef Fish', description: 'Local catch in a Bangkok classic', price: 14, image: dish(ids.mainWhitePlate) },
+      { name: 'Green Curry, Reef Fish', description: 'Local catch in a Bangkok classic', price: 14, image: dish(ids.foodThaiRedCurry) },
       { name: 'Coconut Ice Cream, Peanuts', description: 'Served in the shell', price: 5, image: dish(ids.dessertCoconutBowl) },
     ],
     directions: {
@@ -811,12 +811,12 @@ export const restaurants: Restaurant[] = [
       'A classic Malé tea shop — short eats, sweet black tea and the national breakfast, at prices that barely register.',
     review:
       'To understand how the capital actually starts its day, skip the cafés and take a formica table at a sai hotaa — and Dawn Café is a fine one to learn in. Point at the glass case of hedhikaa (short eats): bajiya, gulha, spicy fish rolls, taken with a glass of hot, sweet black tea. Mornings bring mas huni with roshi; evenings, groups of men debating football over endless refills. Nothing costs more than a couple of dollars, nobody hurries you, and no resort breakfast will teach you a tenth as much about the Maldives. Go hungry, point boldly.',
-    image: img(ids.cityCafeStreet, 1200),
+    image: img(ids.drinkMilkTea, 1200),
     menu: [
       { name: 'Hedhikaa Plate', description: 'Assorted short eats from the case', price: 2.5, image: dish(ids.starterShells) },
       { name: 'Mas Huni & Roshi', description: 'The national breakfast, done daily', price: 3, image: dish(ids.mainSeafoodTable) },
       { name: 'Kulhi Boakibaa Slice', description: 'Spiced fish cake, tea-shop staple', price: 1.5, image: dish(ids.mainSeafoodPlate) },
-      { name: 'Sai (Sweet Black Tea)', description: 'The glass that fuels the city', price: 0.5, image: dish(ids.cityCoffeeTable) },
+      { name: 'Sai (Sweet Black Tea)', description: 'The glass that fuels the city', price: 0.5, image: dish(ids.drinkMilkTea) },
     ],
     directions: {
       transfer: 'Airport ferry or taxi to Malé; tea shops cluster near the harbour and market streets',

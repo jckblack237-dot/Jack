@@ -304,9 +304,9 @@ export const fullMenus: Record<string, MenuSection[]> = {
     {
       title: 'Mains',
       items: [
-        { name: 'Green Chicken Curry', description: 'Thai aubergine, jasmine rice', price: 14, image: dish(ids.mainSeafoodTable) },
-        { name: 'Phad See Ew', description: 'Flat noodles, dark soy, egg', price: 12, image: dish(ids.mainSeafoodPlate) },
-        { name: 'Garlic Pepper Prawns', description: 'The regulars\' order', price: 16, image: dish(ids.mainWhitePlate) },
+        { name: 'Green Chicken Curry', description: 'Thai aubergine, jasmine rice', price: 14, image: dish(ids.foodThaiRedCurry) },
+        { name: 'Phad See Ew', description: 'Flat noodles, dark soy, egg', price: 12, image: dish(ids.foodThaiPadThai) },
+        { name: 'Garlic Pepper Prawns', description: 'The regulars\' order', price: 16, image: dish(ids.starterShrimp) },
       ],
     },
     {
@@ -371,14 +371,14 @@ export const fullMenus: Record<string, MenuSection[]> = {
     {
       title: 'Breakfast & Snacks',
       items: [
-        { name: 'Mas Huni Toastie', description: 'The national breakfast, pressed', price: 6, image: dish(ids.starterShells) },
+        { name: 'Mas Huni Toastie', description: 'The national breakfast, pressed', price: 6, image: dish(ids.foodToastie) },
         { name: 'Banana-Nutella Crêpe', description: 'Harbour-view indulgence', price: 6.5, image: dish(ids.dessertMangoTart) },
       ],
     },
     {
       title: 'Mains',
       items: [
-        { name: 'Grilled Chicken & Rice', description: 'Garlic sauce, salad', price: 9, image: dish(ids.mainSeafoodTable) },
+        { name: 'Grilled Chicken & Rice', description: 'Garlic sauce, salad', price: 9, image: dish(ids.foodDeliSandwich) },
         { name: 'Spaghetti Tuna Arrabbiata', description: 'Local tuna, proper heat', price: 9.5, image: dish(ids.mainSeafoodPlate) },
       ],
     },
@@ -402,9 +402,9 @@ export const fullMenus: Record<string, MenuSection[]> = {
     {
       title: 'Mains',
       items: [
-        { name: 'Basil Fried Rice, Chicken', description: 'Office-lunch favourite', price: 8, image: dish(ids.mainSeafoodTable) },
-        { name: 'Red Curry Beef', description: 'Bamboo shoots, thai basil', price: 9, image: dish(ids.mainSeafoodPlate) },
-        { name: 'Crispy Chicken Phad Thai', description: 'House twist on the classic', price: 9, image: dish(ids.mainWhitePlate) },
+        { name: 'Basil Fried Rice, Chicken', description: 'Office-lunch favourite', price: 8, image: dish(ids.foodThaiFriedRice) },
+        { name: 'Red Curry Beef', description: 'Bamboo shoots, thai basil', price: 9, image: dish(ids.foodThaiRedCurry) },
+        { name: 'Crispy Chicken Phad Thai', description: 'House twist on the classic', price: 9, image: dish(ids.foodThaiPadThai) },
       ],
     },
     {
@@ -427,9 +427,9 @@ export const fullMenus: Record<string, MenuSection[]> = {
     {
       title: 'Curries & Mains',
       items: [
-        { name: 'Rogan Josh', description: 'Slow lamb, Kashmiri chilli', price: 11, image: dish(ids.mainSeafoodTable) },
-        { name: 'Masala Dosa', description: 'Potato masala, sambar, chutneys', price: 6, image: dish(ids.mainWhitePlate) },
-        { name: 'Dal Makhani', description: 'Overnight black lentils, butter', price: 7, image: dish(ids.mainSeafoodPlate) },
+        { name: 'Rogan Josh', description: 'Slow lamb, Kashmiri chilli', price: 11, image: dish(ids.foodIndianKarahi) },
+        { name: 'Masala Dosa', description: 'Potato masala, sambar, chutneys', price: 6, image: dish(ids.foodIndianCurryNaan) },
+        { name: 'Dal Makhani', description: 'Overnight black lentils, butter', price: 7, image: dish(ids.foodIndianButterChicken) },
       ],
     },
     {
@@ -445,15 +445,15 @@ export const fullMenus: Record<string, MenuSection[]> = {
     {
       title: 'All-Day Breakfast',
       items: [
-        { name: 'Smashed Avo & Feta', description: 'Sourdough, dukkah, lime', price: 11, image: dish(ids.starterShells) },
+        { name: 'Smashed Avo & Feta', description: 'Sourdough, dukkah, lime', price: 11, image: dish(ids.foodEggToast) },
         { name: 'Pancake Stack', description: 'Maple, berries, cream', price: 10, image: dish(ids.dessertMangoTart) },
       ],
     },
     {
       title: 'Mains',
       items: [
-        { name: 'Beach Club Burger', description: 'Double patty, house sauce, fries', price: 13, image: dish(ids.mainWhitePlate) },
-        { name: 'Grilled Reef Fish Wrap', description: 'Slaw, chipotle mayo', price: 11, image: dish(ids.mainSeafoodPlate) },
+        { name: 'Beach Club Burger', description: 'Double patty, house sauce, fries', price: 13, image: dish(ids.foodChickenBurger) },
+        { name: 'Grilled Reef Fish Wrap', description: 'Slaw, chipotle mayo', price: 11, image: dish(ids.foodToastie) },
       ],
     },
     {
@@ -519,7 +519,7 @@ export const fullMenus: Record<string, MenuSection[]> = {
     {
       title: 'Mains',
       items: [
-        { name: 'Peri-Peri Chicken Wrap', description: 'Grilled, garlic mayo, fries', price: 8, image: dish(ids.mainSeafoodTable) },
+        { name: 'Peri-Peri Chicken Wrap', description: 'Grilled, garlic mayo, fries', price: 8, image: dish(ids.foodChickenBurger) },
         { name: 'Beef Lasagna', description: 'Baked to order, garlic bread', price: 10, image: dish(ids.mainSeafoodPlate) },
       ],
     },
@@ -536,15 +536,15 @@ export const fullMenus: Record<string, MenuSection[]> = {
     {
       title: 'Starters',
       items: [
-        { name: 'Tom Yum Soup', description: 'Prawn or chicken, proper sour', price: 8, image: dish(ids.starterShrimp) },
+        { name: 'Tom Yum Soup', description: 'Prawn or chicken, proper sour', price: 8, image: dish(ids.foodThaiRedCurry) },
         { name: 'Fish Cakes, Cucumber Relish', description: 'Springy, chilli-flecked', price: 7, image: dish(ids.starterShells) },
       ],
     },
     {
       title: 'From the Wok',
       items: [
-        { name: 'Phad Kra Pao Beef', description: 'Holy basil, fried egg on rice', price: 11, image: dish(ids.mainSeafoodTable) },
-        { name: 'Pineapple Fried Rice', description: 'Served in the pineapple, cashews', price: 12, image: dish(ids.mainSeafoodPlate) },
+        { name: 'Phad Kra Pao Beef', description: 'Holy basil, fried egg on rice', price: 11, image: dish(ids.foodThaiFriedRice) },
+        { name: 'Pineapple Fried Rice', description: 'Served in the pineapple, cashews', price: 12, image: dish(ids.foodThaiPadThai) },
       ],
     },
     {
@@ -602,7 +602,7 @@ export const fullMenus: Record<string, MenuSection[]> = {
       title: 'Plates & Tea',
       items: [
         { name: 'Roshi & Tuna Curry', description: 'The everyday lunch', price: 2.5, image: dish(ids.mainSeafoodTable) },
-        { name: 'Black Tea, Condensed Milk', description: 'Kiru sai — the sweeter glass', price: 0.7, image: dish(ids.cityCoffeeTable) },
+        { name: 'Black Tea, Condensed Milk', description: 'Kiru sai — the sweeter glass', price: 0.7, image: dish(ids.drinkMilkTea) },
       ],
     },
   ],

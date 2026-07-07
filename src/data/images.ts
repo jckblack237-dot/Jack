@@ -54,4 +54,18 @@ export const ids = {
   cityCoffeeCups: '1509042239860-f550ce710b93',
   cityBurgers: '1466978913421-dad2ebd01d17',
   cityCake: '1464349095431-e9a21285b5f3',
+
+  // Cuisine-specific dishes for city venues
+  foodIndianCurryNaan: '1565557623262-b51c2513a641',
+  foodIndianKarahi: '1585937421612-70a008356fbe',
+  foodIndianButterChicken: '1631452180519-c014fe946bc7',
+  foodThaiPadThai: '1559314809-0d155014e29e',
+  foodThaiRedCurry: '1455619452474-d2be8b1e70cd',
+  foodThaiFriedRice: '1512058564366-18510be2db19',
+  foodFishDinner: '1467003909585-2f8a72700288',
+  foodEggToast: '1525351484163-7529414344d8',
+  foodToastie: '1528735602780-2552fd46c7af',
+  foodDeliSandwich: '1550507992-eb63ffee0847',
+  foodChickenBurger: '1481070555726-e2fe8357725c',
+  drinkMilkTea: '1544787219-7f47ccb76574',
 } as const;
